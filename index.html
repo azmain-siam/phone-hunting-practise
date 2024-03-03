@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Phone Hunting Project</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="w-11/12 max-w-7xl mx-auto">
+  <header></header>
+
+  <!-- Search -->
+  <section class="my-4 text-center">
+    <input id="search-field" type="text" placeholder="Search" class="input input-bordered w-full max-w-xs" />
+    <button onclick="searchHandle()" class="btn btn-accent" id="search-btn">Search</button>
+  </section>
+
+  <main>
+    <!-- Loader / Spinner -->
+    <div id="loading-spinner" class="text-center my-40 hidden">
+      <span class="loading loading-spinner loading-lg"></span>
+    </div>
+    <section id="phone-container" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-5">
+    </section>
+    <div id="show-btn" class="mb-8 block text-center hidden">
+      <button class="btn btn-accent text-white">Show More</button>
+    </div>
+
+  </main>
+
+  <footer></footer>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
